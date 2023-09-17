@@ -1,0 +1,18 @@
+1)launch EC2 instance using putty 
+enter public ip host name
+ssh->ssh
+auth->
+credentails
+private key for authntication use ppk file
+accept
+login as=>ubuntu 
+
+# convert pem to ppk:-
+puttygen 
+
+2)launch EC2 instance using tabby 
+
+
+3)launch EC2 instance using mobaxterm 
+session ->ssh =>enter hostname=> advanced ssh->use private key 
+login as ubuntu

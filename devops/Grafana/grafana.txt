@@ -1,0 +1,17 @@
+it is used to logging, monitoring, alerting
+it is used for observability
+some imp tools:-
+1)Grafana
+2)ELK Stack
+3)Prometheus or loki
+4)promptail
+
+loki:-log aggregator
+
+
+to start grafana
+
+it run on port no 3000
+
+
+=>loki is used for logging

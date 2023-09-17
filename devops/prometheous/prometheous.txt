@@ -1,0 +1,12 @@
+it is a time series metrics data
+it is used for monitoring,visualization the metics
+which run on port no 9090
+
+it pull the data from data source
+
+it has 3 component:-
+1)Retrieval
+
+
+Node-Exporter:-
+

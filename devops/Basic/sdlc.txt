@@ -1,0 +1,11 @@
+1)Requirement
+2)Design
+3)Implementation
+4)Verification
+5)maintenance
+
+#3 major development models:-
+1)waterfall models
+2)Agile models
+3)Lean models 
+

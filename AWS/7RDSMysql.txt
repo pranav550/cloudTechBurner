@@ -1,0 +1,8 @@
+1)create database
+#mysql -h  -P   -u  -p
+#in rds database eable port 3306
+#in rds database for mysql workbench enable port all ipv6
+#commands for mysql
+#SHOW DATABASES; 
+2)create snapshot and restore in mysql
+3)create replica -> it is used to move to another region

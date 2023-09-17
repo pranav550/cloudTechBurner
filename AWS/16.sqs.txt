@@ -1,0 +1,3 @@
+SQS(Simple queue service):-
+it is a pull based service
+it is a notification service

@@ -1,0 +1,67 @@
+Distribute the incoming traffic to multiple ec2 instance ,containers
+
+Type of ELB:-
+1)Application Load Balancer:- it work on Layer 7 in osi model 80/443 with http/https
+2)Network Load Balancer:-it work on Layer 4 in osi model it support all logical ports 1-65535
+3)Gateway LoadBalancer:- it is easy to deploy ,scale,manage. It give you one gateway for distributing the traffic across multiple virtual appliances. Scallop and down based on demand
+4) classic Load Balancer
+
+
+
+##############################classic #####################################
+Steps:
+1)create on bootstrap instance with 1a availability zone
+
+#!/bin/bash
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+echo "server1">index.html 
+
+2)create on bootstrap instance with 1b availability zone
+
+#!/bin/bash
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+echo "server2">index.html 
+
+3)create load Balancer and create a new security group
+
+
+############################## Application #####################################
+Steps:
+1)create on bootstrap instance with 1a availability zone
+
+#!/bin/bash
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+echo "server1">index.html 
+
+2)create on bootstrap instance with 1b availability zone
+
+#!/bin/bash
+sudo su -
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+echo "server2">index.html 
+
+3)create target group 
+
+3)create load Balancer and create a new security group
+
+
+
+
+
+
+

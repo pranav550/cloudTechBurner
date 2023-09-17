@@ -1,0 +1,7 @@
+simple notification service:-
+it is push based service
+it send notification to cloud
+sns used to publish message
+we can send message to email/mobile sms/lambda/http/https etc
+it deliver message immediately to subscriber to subscribe application
+it cam send message to all popular device like android,google,apple

@@ -1,0 +1,7 @@
+#psql  -h   -p  -U  -W
+#port no 5432
+#apt-get -y install postgresql
+#in rds database enable port 5432
+#commands for postgresql
+#\l
+#\q

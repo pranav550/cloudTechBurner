@@ -1,0 +1,12 @@
+Infrastructure as a code
+create a template in yaml or json or .txt
+stack:- it is a group of resources
+
+1)create s3
+
+
+1)create stack for ec2
+
+
+
+2) create vpc

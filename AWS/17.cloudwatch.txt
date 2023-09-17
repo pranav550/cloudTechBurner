@@ -1,0 +1,10 @@
+it is monitoring service
+it is giving the alert message
+it is integrated service  to other service
+Two type of monitoring:-
+1)Basic monitoring:-
+it is free
+polls data collect for every 5 minute
+2)Enhanced Monitoring:-
+it's not free
+polls data collect for every minute

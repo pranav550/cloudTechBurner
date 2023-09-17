@@ -1,0 +1,14 @@
+
+0)create security group
+1)1=>EC2
+2)By using ec2=> create ami
+3)in autoscaling launch template
+4)autoscaling group
+
+
+
+
+The command I used are:
+
+top
+Press q to end the top function

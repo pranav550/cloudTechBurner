@@ -1,0 +1,26 @@
+1)mkdir =>create directory
+mkdir f1 f1/f11 f1/f12 f1/f13 
+
+2)ls =>
+3)pwd
+4)cd.. / cd +enter
+5)clear
+6)touch
+touch 1.txt 2.txt
+7)echo
+echo "hi all">1.py
+8)cat 5.py
+9)####### editor=>
+1)nano 6.txt
+ctrl+s=>save
+ctrl+x=>exit
+2)v1 7.py
+i for insert
+:wq! for quit
+3)vim
+i for insert
+:wq! for quit
+10)cp(copy)
+cp 6.txt 5.py
+11)mv
+mv 5.py 7.py

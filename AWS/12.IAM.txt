@@ -1,0 +1,11 @@
+For new user: maximum 10 permission 
+
+1)users
+
+2)Group
+
+3)Roles
+
+4)Policies
+
+

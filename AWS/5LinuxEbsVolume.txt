@@ -1,0 +1,23 @@
+ll
+sudo su -
+lsblk
+
+Attach volume in amazon linux:-
+lsblk
+fdisk /dev/xvdf
+n
+p
+1
+
+w -for exit 
+
+mkfs.xfs /dev/xvdf1
+
+mkdir /mnt/dd1
+mount /dev/xvdf1 /mnt/dd1
+
+unmount:-
+umount /dev/xvdf1 /mnt/dd1
+Exit
+
+

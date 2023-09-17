@@ -1,0 +1,6 @@
+#how devops works?
+continuous development->git
+continuous testing->selenium
+continuous integration->jenkins
+continuous deployment->docker,ansible,puppet
+continuous monitoring->Nagios,ELK,Grafana

@@ -1,0 +1,6 @@
+It is a dns service
+it is server less service
+53 is a dns port no.
+check the health of the resource
+route internet traffic to the resources
+it is not free    

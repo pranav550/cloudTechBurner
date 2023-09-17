@@ -1,0 +1,5 @@
+Step1:Create Instance in one region
+Step2:Create Instance in another region
+step3:create IAM role for ec2 full access
+step4:create lambda function 
+step5:Add configration

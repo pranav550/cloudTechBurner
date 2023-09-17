@@ -1,0 +1,30 @@
+1deleting:
+rm ---> for deletion of files
+rmdir---->deletion of directories
+rm -rf -----> deletion of non-empty directories
+
+2)exit=>
+3)grep=> search content
+grep "hello" demo.txt
+grep -i hello demo.txt
+grep -w hEllo demo.txt
+
+grep--> to find particular pattern
+grep -i ----> case insensitiveness
+grep -w------>exact word
+grep -w -i -> to find all words without case insensitive
+
+4)ps=>process  status
+ps
+ps      ----> To display all the current running processes (front end data like a task manager)
+ps -alx ----> To list out all the processes with backend data
+ps -e   ----> To list out all processes with only required data
+pipelines(|)> To combine or merge the data of 2 commands
+awk     ----> To perform a task where the data is in a tabular form
+
+7)change ownership:-
+chown user filename
+
+8)permission:-
+chmod
+

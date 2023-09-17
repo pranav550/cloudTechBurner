@@ -1,0 +1,21 @@
+1)#versioning:- to maintain multiple variant (if object is deleted we can restored)
+=>S3 bucket name is unique in this region:-al+num+.+_ are allowed 
+step1:create bucket and enable versioning  
+
+
+
+
+2)# Replication(Duplicate)
+its two type:
+1)Same region
+2)Cross region
+
+step1: create bucket of 2 region and versioning allow both region
+so whatever changes  we did on bucket1 on reflect  on bucket2
+=>create replication in bucket 1
+
+
+3)Static website hosting
+
+
+

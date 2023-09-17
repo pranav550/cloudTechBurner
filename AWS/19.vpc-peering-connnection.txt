@@ -1,0 +1,6 @@
+vpc-peering:-communication of one vpc to another vpc connect in same region or another region
+
+one vpc-> ec2 + route table
+
+another vpc-> ec2 + route table
+
