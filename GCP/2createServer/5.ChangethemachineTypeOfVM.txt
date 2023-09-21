@@ -1,0 +1,26 @@
+=>If your existing machine is not fit for the existing workloads you run n your vm change the machine type of that vm (Vertical Scaling)
+=>IF your vm does not have a local ssd and it is not part of managed instance group(MIG).
+you can change the machine type of your vm after stopping it
+=>if your vm has local ssd you can stop the vm to change its machine type unless you force it stop,which cause you lose all the data on the local ssd
+=>changing a machine type might also affect the sustained use discount for that vm
+=>you can only change the machine type of a stopped VM. you can not change the machine type of a running vm
+=>Take snapshot before updating  size
+=> For vm don not have a local ssd and are not part of MIG, you can change the machine type without affecting the following resource:-
+a)the VM SSH key
+b)The VM configuration such as meta data
+c)Persistent disk data installed application and app data
+
+
+################################## Lab in gui:- #########################################################
+
+1)First stop the maching
+2)change the machine type 
+
+
+################################### Lab in cloud shell ######################################
+
+1)stop the machine
+gcloud compute instances stop old-vm
+
+2)change the machine type
+gcloud compute instances set-machine-type old-vm --machine-type e2-micro

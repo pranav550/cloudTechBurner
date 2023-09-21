@@ -1,0 +1,27 @@
+=>you can increase the size of persistent disk when your vm instances require a additional storage space or higher performance disk
+=>you can increase the size of pd but can not decrease
+=>VM using public images automatically resize the boot disk.In all other cases you need to manually resize the disk or non-boot disk
+=> No need to stop the VM,to resize
+
+################################### Resize PD console using ui:- ############################
+
+1) Create One VM with 10 Gb size of boot volume
+
+2)Go to disk ->select disk->edit ->modify size=30gb ->save
+
+#################################### Resize cloud shell :- #################################
+
+1)gcloud compute disks resize instance-1 --size 20 --zone asia-south2-a 
+
+=>sudo such
+=>df -Th
+=>lsblk
+=>parted  /dev/sda
+=>resizepart
+=>1
+=>yes
+=>9.7G?End->100%
+=>quit
+
+Now check again
+=>lsblk

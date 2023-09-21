@@ -1,0 +1,39 @@
+Create Instance:-
+
+1)Name: smallcase
+2)Label: {key:value}
+3)Region:
+4)Machine Family:-
+General purpose
+Compute optimized
+Memory optimized
+GPU
+
+General Purpose series:-
+E2, N1, N2, N2D,E2D
+
+1=> 1 generation
+2=> 2 generation
+D=> Amd processors used
+E2,N1,N2=>intel processor is used
+
+5)Machine Type:-
+custom
+shared core
+shared
+High Memory, High Cpu
+
+6)Boot Disk:-
+public images
+custom images
+snapshot
+existing disk
+
+Firewall:-
+1)Allow Http
+2)Allow Https
+
+Window ka RDP
+Linux ka SSH
+
+

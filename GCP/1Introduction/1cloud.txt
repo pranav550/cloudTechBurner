@@ -1,0 +1,101 @@
+################################## cloud computing:- ######################################
+it isa delivery of computing services like  server,storage,database,networking tools and software over the internet
+
+characteristic of cloud computing:-
+1)on demand service:
+2)broad network access:-any hardware, or any network to use for access   
+3)Resource pooling:-sharing of resources 
+4)Rapid elasticity:-easily upgrade and decrease
+5)measured services:- everything is measure
+6)pay as you go:-like electricity bill
+
+
+
+############################# cloud provide 3 type of services:- ##################################
+1)IAAS->
+-------------
+-------------
+-------------
+-------------
+virtualization
+server
+storage
+networking
+
+ex:-ec2,vm,compute engine, cloud storage
+
+
+2)PAAS:-
+--------
+Runtime
+Middleware
+OS
+virtualization
+server
+storage
+networking
+
+ex:- GKE, cloud Function, cloud run, cloud app engine
+
+3)SAAS:-
+Application
+Runtime
+Middleware
+OS
+virtualization
+server
+storage
+networking
+
+ex:google drive,google workspace,gmail
+
+########################### Types of cloud  ############################
+
+1)Public cloud:- Anyone can access this cloud via internet across this globe
+it is secure
+ex:- azure, aws, gcp
+
+2)private cloud:- 
+it is highly secure
+
+3)Hybrid cloud:- public + private cloud
+
+################################### Concept of Zone , Region , Multi Region ################################
+1)Multi Region:-2
+Multi Region is designed to Function  the loss of single region
+some service for gcp support for multi region are like bigQuery, bigTable, cloudStorage,firestore,
+spanner, Datastore, artifactRegistry
+
+
+2)Region:-36
+Independent geographical areas that consist of zones. this effect on pricing,reliability, networking or performance
+ex-appEngine
+
+
+3)Zone/Data center:109
+It is deployment area for google cloud resources with in a region zone should be considered a single failure domain with in a region.To deploy the fault tolerant application with high availibility and protect against unexpected failure deploy your application across Multiple zone in a region
+ex-virtual machine 
+
+
+
+Network edge Location:176
+more than 200+countries
+
+Note: Each region has 3 zone except iowa region has 4 zone 
+India has two region :Delhi, Mumbai
+Two Zone has far 100 miles or far 
+
+Note:- If a single region fail only customer in that region are impacted customer who has multi-region products are not impacted
+
+Note:- region always end with number
+zone always end with alphabet
+ex:- us-central1-a
+
+############################### Live Migration:- ####################################
+if one zone is working it is automatically Migrate
+
+fault tolerance:-
+High availability:-
+Latency:-
+Redundancy:-
+

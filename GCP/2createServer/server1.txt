@@ -1,0 +1,38 @@
+click on compute engine ->enable
+click on vm instance
+click on create instance
+
+############################### webconsole #################################
+
+
+
+
+############################### cloud cli ##################################
+
+gcloud config set project learninggcp-20586
+
+###create instance
+gcloud compute instances create learning-gce-cli
+
+#clear cli
+export PS1='$'
+clear
+
+# create bucket:-
+gsutil mb gs://learning-gcs-cli
+ls
+
+copy:-
+gsutil cp README-cloudshell.txt gs://gcs-webconsole 
+
+
+# 
+gcloud auth login
+gcloud config set project learninggcp-20586
+gcloud compute instances create learning-gcp-cli --machine-type f1-micro
+gcloud compute instances describe learning-gcp-cli
+gsutil mb gs://learning-gcp-clilib
+
+
+
+pip install google-cloud-storage

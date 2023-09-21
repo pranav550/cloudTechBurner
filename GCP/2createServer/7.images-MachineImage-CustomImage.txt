@@ -1,0 +1,81 @@
+########################################  Images:- #######################################
+You can use os system image to create a boot disk for your instance you can use one of the following image type
+
+=>Public Image:- Public image are provided and maintained by google open source community and third party vendors by default all google cloud project have access to these Images and can use them to create instance
+
+=>Custom Image:-Custom images are available only to your cloud project you can create a custom image from boot disk and other images. then use the custom image to create the instance
+
+=>custom image are free of cost but do incur an image storage charge 
+
+
+########################## you can use custom image for following purpose ##########################
+
+=> Import a virtual disk to compute engine from your on-premises environment or from vm that are running on your local workstation or an another cloud format
+=>create an image from boot disk of your existing vm.then use that image to create a new boot disk for your instance
+
+=>copy one image to another image by using other gcloud cli or api.you can also create an image from a custom image in a different project
+
+#################################### Machine Image:- #######################################
+A machine image isa compute engine resource that store all the configuration , metadata, permission and data from multiple disk of a VM instance you can use a machine image im many system maintenance backup and recovery and instance cloning scenarios
+
+Machine image are the most ideal resources for the following cases:-
+1)Multiple disk backup
+2)instance cloning
+
+=>Machine image are suitable for creating backup of all disk are attached to a VM instances
+
+=>Machine image can be used to clone a instance you can create a multiple copies of an instance
+
+Information stored in a machine image:-
+=>Description, machine type, labels, Network tags, Maintenance policy & instance metadata
+=>Machine image store in cloud storage bucket
+=>Regardless of where the machine image is stored,you can still access the machine image globally
+=>machine image is unchangeable but u can override few properties
+
+###########################when to use which image?##############################################
+
+
+
+########################### create custom image ################################
+
+In GUI:-
+1)vm instance-> image->create image
+Name - instance-1
+Source - disk
+Location - Multi regional [asia]
+
+keep instance running -> create
+
+2) go to compute => create instance
+Name, region-asia-south1
+Boot disk -> Custom image -> Select
+your image -> Create instance 
+
+delete instance
+delete disk
+delete images
+
+Using CloudShell:-
+
+=>Disable auto delete option for the disk
+
+=>gcloud compute instances set-disk-auto-delete instance-1 --no-auto-delete --disk=instance-1
+
+
+###### create cloud shell image ###############
+=>gcloud compute images create cloud-shell-img --source-disk=instance-1 --source-disk-zone=asia-south2-a --storage-location=asia --force
+
+=>gcloud compute images describe cloud-shell-img
+
+=>gcloud compute images delete cloud-shell-img
+
+
+=>delete instance
+=>delete disk
+=>delete images
+
+
+########################### create Machine Image ################################
+
+
+

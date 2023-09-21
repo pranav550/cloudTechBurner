@@ -1,0 +1,60 @@
+################################Google Cloud Compute Engine/ Virtual Machine ######################### 
+
+in compute many services
+Compute Engine
+(i) Server Based service
+1)Vmware Engine
+2)K8s Engine
+3)computeEngine
+
+(ii) without server based(serverless)
+1)AppEngine
+2)CloudRun
+3)CloudFunction
+
+Compute Engine:- It is a customizable compute service that lets you create and run Virtual machine on Google
+infrastructure
+
+There are two type of machine in gcp:-
+1)Custom Machine:-
+You can take vcpu and memory as you need and create your own custom machine
+
+2)Predefined machine:-
+Predefined machine type are prebuilt and ready to go configuration of vm with specific amount  of vcpu and memory to start running app quickly
+
+=>Google computeEngine comes under Iaas:-
+=>Virtual Machine is like physical hardware server but running  in the cloud
+=>Gcp isolate resource and settle them on a per server basis with different combination
+=>Google provide vm of all sizes=> micro to 160 vcpu and 3.75 tb memory
+=>you can attach local ssd up to 3 tb and persistent disk up to 64tb that to encrypted as well
+=>Google cloud use open source kvm hypervisor at backend
+=>Fast booting time among all cloud provider
+=>all vcpu,gcp and GB of memory are charged minimum of 1 minute after 1 min instance are changed in 1 sec  of increment
+
+
+####################### Types of Predefined VM #############################
+
+1)General Purpose
+2)compute optimised
+3)memory optimised
+4)Accelarated optimised
+5)shared core
+
+=>MAchine type is a set of Virtualised hardware resource availble to a Virtual machine including the system memory vcpu and persistent disk limit
+=>In compute engine machine type are grouped and put inside families on their behaivour and workload
+
+##############################Compute Engine has 3 terms##############################
+
+machine family:- Set of processors and hardware configuration
+
+
+services:-MAchine families are further classified by series and General
+
+
+MAchine type: Every machine series are Predefined machine type that provide a  set of resources
+
+Customer using GCE:-
+Paypal, 
+Twitter,
+Airbus,
+sky

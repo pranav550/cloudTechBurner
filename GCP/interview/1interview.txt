@@ -1,0 +1,6 @@
+1)Differnce b/w vertical and horizontal scaling?
+vertical scaling:-
+existing resource ki memory ko increse karna
+
+horizontal scaling:-
+autoscaling karna

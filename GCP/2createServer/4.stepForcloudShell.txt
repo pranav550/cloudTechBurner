@@ -1,0 +1,24 @@
+############################### create instance ##############################
+gcloud compute instances create linux-shell1 --machine-type e2-micro --zone asia-south2-a
+
+############################### connect to ssh ###############################
+gcloud compute ssh linux-shell1 --zone=asia-south2-a
+
+############################### Show Image List ###############################
+gcloud compute images list
+
+############################### create instance ##############################
+gcloud compute instances create linux-shell2 --image-family ubuntu-minimal-2304-amd64 --image-project ubuntu-os-cloud --zone asia-south2-a
+
+############################### describe VM ##################################
+gcloud compute instances describe linux-shell2
+
+############################### start/stop VM ##################################
+gcloud compute instances stop/start/restart/delete linux-shell2
+
+############################### list VM ##################################
+gcloud compute instances list
+
+############################### delete VM ##################################
+gcloud compute instances delete linux-shell2
+

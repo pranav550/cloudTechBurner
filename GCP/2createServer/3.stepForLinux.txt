@@ -1,0 +1,36 @@
+
+#################### step for debian Linux:- ###########################
+sodu su
+apt update -y
+apt install apache2 -y
+apache2 -version
+systemctl status apache2
+hostname -I
+
+v1 /var/www/html/index.html
+press i for insert
+press esc wq for quit
+
+echo "pranav">/var/www/html/index.html
+
+
+#################### step for ubuntu Linux:- ###########################
+sodu su
+apt-get update -y
+apt install nginx -y
+systemctl start nginx
+systemctl status nginx
+hostname -I
+
+v1 /var/www/html/index.html
+press i for insert
+press esc wq for quit
+
+echo "pranav">/var/www/html/index.html
+
+
+
+
+Redhat-yum
+amazon linux-yum
+debian-apt

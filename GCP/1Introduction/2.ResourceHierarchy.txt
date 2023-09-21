@@ -1,0 +1,13 @@
+organization  -> Highest Priority, Low permission
+    |
+  Folder    
+    |
+  Project
+    |
+  Resources
+  |       |
+ VM    Storage  ->Low Priority, Max permission
+
+ projectID:-always unique, it mutable on the time of project creation
+ projectName:- choose by you , always in small case
+ ProjectNumber:-always unique
