@@ -1,0 +1,28 @@
+########################## Signed URL:- #################################
+
+=>A signed url is a url that provide limited permission and time to make request
+
+=>Signed url contain authentication information in their query string  allowing user without credential to perform specific action on a resource
+
+################### Key parameter in signed url #########################
+
+1)X-Goog-Algorithm -> the Algorithm used to signed the url
+2)X-Goog-Credentials -> Information about the credential used to create the signed url
+3)X-Goog-Date -> the date and time the signed url become usable YYYYMMDD 'T' HHMMSS'Z'
+4)X-Goog-Expires -> the length of time  the signed url remains valid measure in sec.In our video we will take 60 sec Max  duration is 60,4800 sec in 7 days
+5)X-Goog-SignedHeader -> header that had to be included as part of any request that  used  the signed url
+6)X-Goog-Signature -> the authentication string that allowed request using the signed url to access resources 
+
+Lab :-
+
+1)create bucket
+2)upload image
+3)in api service ->credentials-> signed url
+4)in cloud shell 
+=>ls
+=>sudo rm -rf $HOME
+=>triple . => Restart
+=>want clean VM state
+5)pip install pyopenssl
+6)gsutil signurl -d 60s key.json gs://bucket-22-9/pic.jpg
+

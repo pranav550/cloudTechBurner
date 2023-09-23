@@ -1,0 +1,46 @@
+Cloud Storage pricing based on following components:-
+1)Data Storage
+2)Data Processing
+3)Network Usage
+
+Data Storage:- the amount of data stored in your bucket storage rates vary depending on the storage class of your data and location of your bucket
+
+Data Processing:- the processing done by cloud storage which includes operation changes any applicable retrieval fees and inter-region replication
+
+Network Usage:- the amount of data read from or moved b/w your bucket
+
+for eg:- Data storage cost in IOWA
+
+                 Standard    NearLine    ColdLine    Archive
+Regional          $0.020      $0.010       $0.004     $0.002
+
+Dual-Region       $0.022      $0.011       $0.0044    $0.004 
+
+Multi-region      $0.026      $0.010       $0.007     $0.004
+
+
+Note:-Dual region are billed to both underlying region at the above prices
+
+For eg:- Standard storage in a dual region comprised of IOWA and oregon will be billed at $0.22 per gb per month for IOWA and $0.22 per gb per month
+
+
+############################ Data Processing ###################################
+
+Data Processing cost consist of operation charges which apply to all request mode to cloud storage retrieval fees which apply to reading data stored in certain storage classes  and integration replication changes, which apply to data written to dual region and Multi region   
+
+Price is $0.05/10000 operation in standard storage $0.10/10000 operation in NearLine and ColdLine
+
+Retrieval/Network Usage Fees - applies when u read copy move and rewrite object data or metadata
+that is stored in nearLine Storage,ColdLine Storage,Archive Storage
+
+Standard -  $0/gb
+NearLine -  $0.01/gb
+ColdLine -  $0.02/gb
+Archive -   $0.05/gb
+
+
+=>Default integration replication is free tubo replication is $0.04/gb changeable
+=>Data move with in the same location is free
+=>Data move b/w different continent in changeable
+
+

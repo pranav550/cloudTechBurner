@@ -1,0 +1,15 @@
+1)Create a bucket
+2)go to cloud shell
+3)wget paste link
+4)mkdir website
+5)mv file website/
+6)cd website 
+7)unzip file
+cd ..
+8)gsutil -m cp -r file-name gs://bucket-22-9
+
+9)go to console -> bucket -> folder -> select all files or object -> permission ->add
+Principle -  allUser
+SelectRole - cloudStorage -> Viewer
+
+

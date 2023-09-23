@@ -36,46 +36,11 @@ Information stored in a machine image:-
 
 
 
-########################### create custom image ################################
-
-In GUI:-
-1)vm instance-> image->create image
-Name - instance-1
-Source - disk
-Location - Multi regional [asia]
-
-keep instance running -> create
-
-2) go to compute => create instance
-Name, region-asia-south1
-Boot disk -> Custom image -> Select
-your image -> Create instance 
-
-delete instance
-delete disk
-delete images
-
-Using CloudShell:-
-
-=>Disable auto delete option for the disk
-
-=>gcloud compute instances set-disk-auto-delete instance-1 --no-auto-delete --disk=instance-1
 
 
-###### create cloud shell image ###############
-=>gcloud compute images create cloud-shell-img --source-disk=instance-1 --source-disk-zone=asia-south2-a --storage-location=asia --force
-
-=>gcloud compute images describe cloud-shell-img
-
-=>gcloud compute images delete cloud-shell-img
 
 
-=>delete instance
-=>delete disk
-=>delete images
 
-
-########################### create Machine Image ################################
 
 
 

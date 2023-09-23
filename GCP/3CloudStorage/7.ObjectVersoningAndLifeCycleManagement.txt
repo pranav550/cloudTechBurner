@@ -1,0 +1,73 @@
+############################### Object Versioning #############################
+=>To Support the retrieval of object that are deleted or replaced. cloud storage offer the object Versioning feature
+
+Once Enabled Object Versioning:-
+=>Non Current Version retain the name of the object but are uniquely identified by there generation number
+
+=>Non current version only appear in request that explicitly call them to be included
+
+If U disable object Versioning:-
+=>the bucket no longer accumulate new non-current version of object
+=>Object Versioning that already exist on the bucket are unaffected
+
+
+Gui:-
+
+1)Create bucket -> upload file
+2)overwrite file again
+3)go to permission ->enable Versioning
+
+
+cloud Shell:-
+
+=>ls
+=>sudo rm -rf $HOME
+=>triple . => Restart
+=>want clean VM state
+
+1)Versioning enable
+gsutil versioning set on gs://bucket-22-9
+
+2)version disable
+gsutil versioning set off gs://bucket-22-9
+
+3)check versioning enable or not
+gsutil versioning get gs://bucket-22-9
+
+4)get versioning data
+gsutil ls -a gs://bucket-22-9
+
+5)delete versioning number?
+gsutil rm gs://bucket-22-9/versioning.txt@generationNumber
+
+6)clear screen 
+ctrl+l
+
+
+############################### Object Lifecycle management:- ##########################
+
+To Support common use cases like setting a TTL for objects, retaining non current version of object , or downgrading storage classes of object to help manage cost, cloud storag offer the object lifecycle management features
+
+In order to use object lifecycle management you define a lifecycle configuration which must be set on a bucket. The configuration contains a set of rules which apply to current or future object in the bucket when an object meet the criteria of one of the rules cloud storage automatically perform a specified action on the object
+
+Some Examples:-
+
+=>Downgrade the storage class of objects older than365 days to cold line storage
+=>Delete object created before 1 jan 2022 
+=>keep only 3 most recent version of each object in a bucket with version enabled 
+
+
+############################## Object LifeCycle configuration ###########################
+
+Each lifecycle management configuration contains a set of rules. Each rule contains one action and one or more condition
+
+=>An object has to match all of the condition specified in a rule for the action in the rule to be taken
+
+=>if u specified multiple rules that contain the same action,the action is taken on an object when object match the condition in any of the rule
+
+=>if multiple rules have their condition simultaneously for a single object cloud storage perform the action associated with only one of the rule based of the following consideration
+
+=>the delete action take precedence over any set storage class action
+
+=>the setStorage class action that switch the object to the storage class with the lowest at storage pricing take precedence
+

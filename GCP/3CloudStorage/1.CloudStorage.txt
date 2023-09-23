@@ -1,0 +1,56 @@
+############################## Storage Type in google cloud ###############################
+
+1)Cloud Storage(S3)
+2)Persistent disk(EBS)
+3)Filestore(EFS)
+
+############################## Google Cloud Database Store #################################
+1)BigTable
+2)FireStore (Backend as a service)
+3)CloudSql
+4)CloudSpanner
+5)MemoryStore
+
+
+######################### Cloud Storage #############################
+
+=>it is service for storing your object in google cloud. An object is an immutable piece of data consist of a file of any size and format
+
+=> you store object in container(box) called bucket
+
+=> way to access/interact with cloud storage
+a)console
+b)gsutil(cloud shell)
+c)client libraries
+d)rest api
+
+
+#Type of storage class:-
+1)Standard Storage
+2)Nearline Storage
+3)Coldline Storage
+4)Archive Storage -> back data store here for low lost and take time to retrival 
+
+=>cost wise
+storage>nearline>coldline>archive
+
+=>retrival speed wise
+storage>nearline>coldline>archive
+
+=>Location type:-
+Regional
+Dual Regional
+Multi region
+
+=>A Storage class is a piece of metadata that is used by every object
+=>the storage class set for an object affect the object availability and pricing model
+=>you can change the storage class of an existing object other by rewriting the object or by using object lifecycle management
+=>when you create a bucket you can specify a default storage class for the bucket if u don't specify then default storage is standard 
+
+
+LAb on GUI:-
+1)create bucket
+2)upload file
+3)click on lifecycle
+4)add rule
+

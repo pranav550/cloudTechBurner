@@ -1,0 +1,46 @@
+=> ls -a $HOME
+=>sudo rm -rf $HOME -> Restart CloudShell
+=>triple . => Restart
+=>want clean VM state
+
+1)create bucket
+mb ->make bucket
+b->bucket
+l->location
+
+
+=>gsutil mb -b on -l us-east1 gs://bucket-22-9
+
+2)upload an object into your bucket
+
+CloudShell -> upload  -> file -> uploadFile
+
+=> gsutil cp pic.jpg gs://bucket-22-9
+
+3)Download the object from your bucket
+=>gsutil cp gs://bucket-22-9/pic.jpg /home/pranavverma622/abc.jpg
+
+pwd/pic.jpg
+
+4)copy the object to a folder  in a bucket
+=>gsutil cp gs://bucket-22-9/pic.jpg gs://bucket-22-9/newFolder/changepic.jpg
+
+5)List content of a bucket or a folder
+=>gsutil ls gs://bucket-22-9
+=>gsutil ls gs://bucket-22-9/newFolder
+
+6)List detail for an object
+=>gsutil ls -l gs://bucket-22-9/pic.jpg
+
+7)Make the object publicly accessible
+=>gsutil iam ch allUsers:objectViewer gs://bucket-22-9
+
+8)Make the object not publicly accessible
+=>gsutil iam ch -d allUsers:objectViewer gs://bucket-22-9
+
+9)Delete an object or bucket
+gsutil rm gs://bucket-22-9/pic.jpg
+
+10)Delete entire buckets and its object
+gsutil rm -r gs://bucket-22-9
+

@@ -1,0 +1,31 @@
+
+########################### create Machine Image ################################
+
+##################### GUI:- ######################
+
+1)Go to machine Image
+-> create machine image
+Name- mymachine -> img
+source vm instance -> instance-1
+Location -> Regional
+-> create
+
+2)Go to machine image ->create instance
+
+3)test
+
+
+#################### cloud shell ##########################
+
+1)gcloud compute machine-images create cloudshellimg --source-instance=instance-1 --source-instance-zone=us-central1-c
+
+=>create instance from machine image
+2)gcloud beta compute instances create vmcloudshell --zone=us-central1-c --source-machine-image=cloudshellimg 
+
+=>Extra command
+--machine-type=e2-standard-2
+
+
+
+
+

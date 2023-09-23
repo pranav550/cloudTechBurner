@@ -1,0 +1,26 @@
+1)Name Your bucket(unique)
+labels(optional)
+
+2)choose  where to store data
+multiRegion
+DualRegion
+Region
+
+3) choose a default storage class for your data
+Standard
+NearLine
+ColdLine
+Archive
+
+4)choose how to control access to object
+uniform
+
+5)choose how to protect object data protection tools
+None
+Object Versioning
+Retention policy
+
+
+Data encryption
+=>Google managed encryption key
+=>custom managed encryption key 

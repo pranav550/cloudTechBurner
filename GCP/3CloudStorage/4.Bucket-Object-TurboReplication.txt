@@ -1,0 +1,20 @@
+######################### Bucket #################################
+=>Bucket is like folder for your objects
+=>Using Bucket - You can organize and maintain access permission
+=>You can not create nested  bucket 
+=>Bucket has some name default storage class Geographic location
+=>Name and location can only be changed by deleting and recreating
+=>There is only one google cloud storage namespaces which means every bucket must have a unique name across entire google cloud  storage namespace
+=>object must be unique only with in a given bucket  
+
+######################### Object #################################
+=> object is file that u want to stored
+=> can be up tp 5tb
+=> Bucket size is unlimited
+=> object  has data and metadata
+=> no limit on number of object in buckets
+=> object are immutable and u can overwrite object
+
+######################### Turbo Replication ######################
+
+Turbo Replication is a cloud storage premium feature designed to asynchronously replicate newly written cloud storage object associated  with any insert rewrite  copy or compose operation regardless of object size to separate a region written a target of 15 min
